@@ -19,40 +19,10 @@ export const sitePages: SitePage[] = [
     highlights: ["Volume pricing guidance", "Security and compliance documentation", "Custom integration scoping"],
   },
   {
-    path: "/product",
-    title: "Product Overview",
-    description: "Explore the full Klinix platform for digital intake, risk flagging, and front-desk efficiency.",
-    highlights: ["AI medical review workflow", "Patient experience improvements", "Operational analytics dashboard"],
-  },
-  {
-    path: "/how-it-works",
-    title: "How Klinix Works",
-    description: "See the step-by-step intake journey from patient form completion to PMS-ready clinic data.",
-    highlights: ["Pre-visit patient intake links", "Real-time risk detection", "Automatic record sync to PMS"],
-  },
-  {
-    path: "/pricing",
-    title: "Pricing",
-    description: "Choose a plan designed for your practice size with transparent monthly pricing.",
-    highlights: ["Solo, Practice, and Enterprise options", "No per-patient fees", "30-day trial availability"],
-  },
-  {
-    path: "/resources",
-    title: "Resources",
-    description: "Access practical launch guides, compliance references, and implementation playbooks.",
-    highlights: ["Integration documentation", "Security and compliance guides", "Customer rollout stories"],
-  },
-  {
     path: "/integrations",
     title: "Integrations",
     description: "Connect Klinix to Dentrix, Eaglesoft, Open Dental, Curve, and custom API systems.",
     highlights: ["Native PMS connectors", "Bi-directional patient data sync", "Go-live support for migration"],
-  },
-  {
-    path: "/features",
-    title: "Features",
-    description: "Review all core Klinix features built for dental clinic owners and office managers.",
-    highlights: ["AI risk detection", "Multilingual intake forms", "Role-based team access"],
   },
   {
     path: "/security",

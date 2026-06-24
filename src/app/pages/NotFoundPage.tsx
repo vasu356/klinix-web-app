@@ -1,26 +1,29 @@
 import { Link } from "react-router-dom";
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
-import { Button } from "../components/Button";
+import { ArrowRight } from "lucide-react";
 
 export function NotFoundPage() {
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-background">
       <Navigation />
-      <main className="pt-28 px-6 pb-24">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-sm uppercase tracking-[0.3em] text-primary/80 font-semibold mb-4">
-            Page not found
-          </p>
-          <h1 className="text-5xl font-semibold text-foreground tracking-tight mb-6">
-            We couldn't find that page.
-          </h1>
-          <p className="text-base leading-relaxed text-foreground/70 max-w-2xl mx-auto mb-12">
-            The link may be broken or the page may have been moved. Return to the Klinix homepage to continue.
-          </p>
-          <Link to="/">
-            <Button variant="primary">Back to homepage</Button>
-          </Link>
+      <main className="pt-28 pb-24 px-6 flex items-center min-h-[70vh]">
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="text-8xl font-bold text-primary/15 mb-6 leading-none">404</p>
+          <span className="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary mb-5">Page not found</span>
+          <h1 className="text-4xl font-semibold tracking-tight text-foreground mb-5">We couldn't find that page.</h1>
+          <p className="text-lg text-foreground/65 leading-8 mb-10">The link may be broken or the page may have moved. Head back to the homepage or visit one of the pages below.</p>
+          <div className="flex flex-wrap gap-4 justify-center mb-12">
+            <Link to="/" className="rounded-full bg-primary px-7 py-3 text-sm font-semibold text-white hover:bg-primary/90 transition-colors">Back to homepage</Link>
+            <Link to="/pricing" className="inline-flex items-center gap-2 rounded-full border border-border px-7 py-3 text-sm font-semibold text-foreground hover:border-primary hover:text-primary transition-colors">
+              Pricing <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+          <div className="flex flex-wrap gap-4 justify-center text-sm">
+            {["/product", "/how-it-works", "/features", "/resources"].map((l) => (
+              <Link key={l} to={l} className="text-muted-foreground hover:text-primary transition-colors capitalize">{l.replace("/", "").replace("-", " ")}</Link>
+            ))}
+          </div>
         </div>
       </main>
       <Footer />
