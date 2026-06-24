@@ -130,6 +130,10 @@ klinix-web-app/
 └── README.md
 ```
 
+## 🚀 Live Demo
+
+**Try it now**: [https://klinix-web-app.vercel.app/](https://klinix-web-app.vercel.app/)
+
 ## 🚀 Getting Started
 
 ### Prerequisites
